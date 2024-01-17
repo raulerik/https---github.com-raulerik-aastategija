@@ -1,91 +1,59 @@
-#about .highlight {
-  color: #4caf50; /* Your highlight color */
-}
-
-#about h2 {
-  color: #ffffff; /* Your desired heading color */
-}
-
-#about p {
-  color: #dddddd; /* Your desired paragraph color */
-}
-
-#about .btn-custom {
-  background-color: #333; /* Your desired button color */
-  border: none;
-}
-
-#about .btn-custom:hover {
-  background-color: #555; /* Darker shade for hover effect */
-}
-
+/* Global Styles */
 body {
-  background-color: #000; /* Assuming the background is black */
+  background-color: #000; /* Black background */
   color: #fff; /* White text color */
-  font-family: "Arial", sans-serif; /* Example font */
+  font-family: "Montserrat", sans-serif; /* Default font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
+
+/* Container for Content */
+.container {
+  max-width: 1440px; /* Maximum width for content */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding to the sides */
+  box-sizing: border-box; /* Include padding in max-width calculation */
+}
+
+/* Navbar Customization */
 .navbar-custom {
   background: transparent;
   padding: 1rem 0;
+  width: 100%;
 }
+
 .navbar-custom .navbar-brand img {
-  height: 50px; /* Adjust based on your logo's aspect ratio */
+  height: 50px; /* Logo height */
 }
+
 .navbar-custom .nav-link {
   color: #fff; /* White text color for nav links */
-  margin-right: 1rem; /* Spacing between nav links */
+  margin-right: 1rem; /* Space between nav links */
 }
+
 .navbar-custom .nav-link:hover {
-  color: #e0e0e0; /* Light grey for hover state */
-}
-.landing-header {
-  position: relative;
-  text-align: right;
-  padding: 200px 0; /* Adjust padding to fit your design */
-  background: url("path_to_your_background_image.jpg") no-repeat center center;
-  background-size: cover;
-}
-.landing-header h1 {
-  font-size: 4rem; /* Large font size for the main heading */
-  color: #6ab04c; /* Adjust to match the green color in the design */
-  margin-bottom: 0.5rem;
-}
-.landing-header p {
-  position: relative;
-  text-align: right; /* Center align text */
-  background: url("path_to_your_background_image.jpg") no-repeat center center;
-  background-size: cover;
-  padding: 50px 0; /* Adjust the padding to suit your design */
+  color: #e0e0e0;
+  text-decoration: underline; /* Light grey on hover */
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Overlay to darken the background image for better text readability */
-}
-
+/* Navigation Bar */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   color: white;
+  padding: 10px 0; /* Add some padding */
 }
 
 nav ul {
   display: flex;
+  list-style: none; /* Remove list bullets */
+  padding: 0; /* Remove list padding */
 }
 
 nav ul li {
-  margin-left: 20px; /* Adjust spacing between menu items */
+  margin-left: 10px; /* Space between menu items */
 }
 
 nav ul li a {
@@ -93,10 +61,196 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* Logo Styles */
 .logo {
-  /* Style your logo here */
+  width: 206.545px;
+  height: 80px;
+  flex-shrink: 0;
 }
 
 .logo img {
-  height: 50px; /* Adjust the size of your logo */
+  height: 50px; /* Logo size */
 }
+
+/* About Section */
+#about .highlight {
+  color: #4caf50; /* Highlight color */
+}
+
+#about h2 {
+  color: #ffffff; /* Heading color */
+}
+
+#about p {
+  color: #dddddd; /* Paragraph color */
+}
+
+#about .btn-custom {
+  background-color: #333; /* Button color */
+  border: none;
+}
+
+#about .btn-custom:hover {
+  background-color: #555; /* Darker on hover */
+}
+
+/* Landing Header Styles */
+.landing-header {
+  position: relative;
+  text-align: right;
+  padding: 100px 0; /* Adjust padding */
+  background: url("path_to_your_background_image.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 500px; /* Set a minimum height for the header */
+}
+
+.landing-header h1 {
+  align-self: stretch;
+  color: var(--EKKSL-Green-green-300, #b6de75);
+  text-align: center;
+  font-family: Dosis;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.landing-header p {
+  align-self: stretch;
+  color: #fff;
+  text-align: center;
+  font-family: Dosis;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Overlay for Background Images */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Marquee styles */
+/* styles.css */
+
+/* Marquee styles */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #000; /* You can remove or change this if your image covers the whole background */
+}
+
+.marquee-content {
+  display: inline-block;
+  background-repeat: repeat-x; /* Repeat the image horizontally */
+  min-width: 400%; /* Ensure the div is wide enough to allow for continuous scrolling */
+  height: 80px; /* Set the height of your marquee */
+  animation: marquee 60s linear infinite;
+  position: absolute;
+left: -240px;
+bottom: -40px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(
+      -50%
+    ); /* Adjust if needed based on the width of your content */
+  }
+}
+
+/* ... existing CSS ... */
+
+/* Add additional custom styling here */
+
+.action-image {
+  position: absolute;
+  left: 100px;
+  top: 61px;
+  width: 871px;
+  height: 890px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: -434px;
+  position: relative;
+  width: 1440px;
+  height: 890px;
+  margin: 0 auto;
+  background: #000000;
+}
+.vise {
+  flex-shrink: 0;
+  position: absolute;
+  width: 871px;
+  height: 890px;
+  top: 61px;
+  left: 100px;
+    no-repeat center;
+  background-size: cover;
+  z-index: 3;
+}
+.vise-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 16px;
+  position: absolute;
+  width: 718px;
+  height: 259px;
+  top: 385px;
+  left: 50%;
+  transform: translate(-13.65%, 0);
+}
+.baltic-games {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 121px;
+  color: #b6de75;
+  font-family: "Dosis", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 121px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+}
+.elevate-your-skills {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 718px;
+  height: 122px;
+  color: #ffffff;
+  font-family: "Dosis", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60.672px;
+  text-align: center;
+  text-overflow: initial;
+  z-index: 2;
+  overflow: hidden;
+
+ 
+

@@ -40,27 +40,27 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-custom">
       <div class="container-fluid">
+        <!-- Logo -->
         <a class="navbar-brand" href="#">
-          <img src="path_to_your_logo.png" alt="EKKSL Logo" class="logo" />
+          <img src="path_to_your_logo.png" alt="EKKSL Logo" />
         </a>
+        <!-- Toggler -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#about"
                 >About</a
@@ -83,9 +83,12 @@
       </div>
     </nav>
 
-    <header class="landing-page-header">
-      <h1 class="display-1">Baltic Games 2024</h1>
-      <p class="lead">Elevate Your Skills<br />Unite in Sport</p>
+    <header class="landing-header">
+      <div class="overlay"></div>
+      <div class="container position-relative">
+        <h1>Baltic Games 2024</h1>
+        <p>Elevate Your Skills<br />Unite in Sport</p>
+      </div>
     </header>
 
     <!-- About Section -->

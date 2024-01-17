@@ -1,85 +1,20 @@
-/* Basic Reset */
-body,
-h1,
-h2,
-p,
-/* Resetting default styles */
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+#about .highlight {
+  color: #4caf50; /* Your highlight color */
 }
 
-/* Navbar styles */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: white;
+#about h2 {
+  color: #ffffff; /* Your desired heading color */
 }
 
-nav ul {
-  display: flex;
+#about p {
+  color: #dddddd; /* Your desired paragraph color */
 }
 
-nav ul li {
-  margin-left: 20px; /* Adjust spacing between menu items */
+#about .btn-custom {
+  background-color: #333; /* Your desired button color */
+  border: none;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.logo {
-  /* Style your logo here */
-}
-
-.logo img {
-  height: 50px; /* Adjust the size of your logo */
-}
-
-/* Additional styling */
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-header {
-  /* Style your header here */
-}
-
-/* Style for each section */
-section {
-  padding: 20px;
-  margin: 20px 0;
-}
-
-#about {
-  background-color: #f4f4f4;
-}
-
-#sports {
-  background-color: #eaeaea;
-}
-
-#schedule {
-  background-color: #f4f4f4;
-}
-
-#venues {
-  background-color: #eaeaea;
-}
-
-#sponsors {
-  background-color: #f4f4f4;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
+#about .btn-custom:hover {
+  background-color: #555; /* Darker shade for hover effect */
 }

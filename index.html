@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- ... other head elements ... -->
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baltic Games 2024</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -13,80 +14,80 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .navbar {
+        background-color: transparent;
+      }
+      .nav-link {
+        color: white;
+      }
+      .landing-page-header {
+        text-align: center;
+        padding-top: 150px; /* Adjust as needed */
+      }
+      .logo {
+        width: 200px; /* Adjust as needed */
+        height: auto;
+      }
+      /* Add additional custom styling here */
+    </style>
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="path/to/logo.png" alt="Logo" height="40" />
-        <!-- Your logo here -->
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <!-- ml-auto pushes items to the right -->
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sports">Sports</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#schedule">Schedule</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#venues">Venues</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sponsors">Sponsors</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="path_to_your_logo.png" alt="EKKSL Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sports">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#venues">Venues</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sponsors">Sponsors</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <!-- About Section -->
-    <section id="about" class="container mt-5 pt-5">
-      <h2>About</h2>
-      <!-- Content for About -->
-    </section>
+    <header class="landing-page-header">
+      <h1 class="display-1">Baltic Games 2024</h1>
+      <p class="lead">Elevate Your Skills<br />Unite in Sport</p>
+    </header>
 
-    <!-- Sports Section -->
-    <section id="sports" class="container mt-5">
-      <h2>Sports</h2>
-      <!-- Content for Sports -->
-    </section>
+    <!-- Add your sections here -->
 
-    <!-- Schedule Section -->
-    <section id="schedule" class="container mt-5">
-      <h2>Schedule</h2>
-      <!-- Content for Schedule -->
-    </section>
-
-    <!-- Venues Section -->
-    <section id="venues" class="container mt-5">
-      <h2>Venues</h2>
-      <!-- Content for Venues -->
-    </section>
-
-    <section id="mainOrganizer" class="container mt-5">
-      <h2>Main organizer</h2>
-      <!-- Content for Schedule -->
-    </section>
-
-    <!-- Sponsors Section -->
-    <section id="sponsors" class="container mt-5">
-      <h2>Sponsors</h2>
-      <!-- Content for Sponsors -->
-    </section>
-
-    <!-- Rest of your webpage's content goes here -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

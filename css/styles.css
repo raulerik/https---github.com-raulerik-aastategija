@@ -40,7 +40,7 @@ body {
 }
 .landing-header {
   position: relative;
-  text-align: center;
+  text-align: right;
   padding: 200px 0; /* Adjust padding to fit your design */
   background: url("path_to_your_background_image.jpg") no-repeat center center;
   background-size: cover;
@@ -51,14 +51,52 @@ body {
   margin-bottom: 0.5rem;
 }
 .landing-header p {
-  font-size: 1.5rem; /* Larger font size for the subtitle */
-  color: #fff; /* White color for the subtitle */
+  position: relative;
+  text-align: right; /* Center align text */
+  background: url("path_to_your_background_image.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 50px 0; /* Adjust the padding to suit your design */
 }
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Overlay to darken the background image for better text readability */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px; /* Adjust spacing between menu items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  /* Style your logo here */
+}
+
+.logo img {
+  height: 50px; /* Adjust the size of your logo */
 }

@@ -18,3 +18,47 @@
 #about .btn-custom:hover {
   background-color: #555; /* Darker shade for hover effect */
 }
+
+body {
+  background-color: #000; /* Assuming the background is black */
+  color: #fff; /* White text color */
+  font-family: "Arial", sans-serif; /* Example font */
+}
+.navbar-custom {
+  background: transparent;
+  padding: 1rem 0;
+}
+.navbar-custom .navbar-brand img {
+  height: 50px; /* Adjust based on your logo's aspect ratio */
+}
+.navbar-custom .nav-link {
+  color: #fff; /* White text color for nav links */
+  margin-right: 1rem; /* Spacing between nav links */
+}
+.navbar-custom .nav-link:hover {
+  color: #e0e0e0; /* Light grey for hover state */
+}
+.landing-header {
+  position: relative;
+  text-align: center;
+  padding: 200px 0; /* Adjust padding to fit your design */
+  background: url("path_to_your_background_image.jpg") no-repeat center center;
+  background-size: cover;
+}
+.landing-header h1 {
+  font-size: 4rem; /* Large font size for the main heading */
+  color: #6ab04c; /* Adjust to match the green color in the design */
+  margin-bottom: 0.5rem;
+}
+.landing-header p {
+  font-size: 1.5rem; /* Larger font size for the subtitle */
+  color: #fff; /* White color for the subtitle */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+}

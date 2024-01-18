@@ -330,7 +330,7 @@ position: relative;
 display: flex;
 align-items: center;
 justify-content: flex-start}
-}
+
 
 /* Sports section */
 
@@ -345,4 +345,54 @@ justify-content: flex-start}
   background-color: #b42424;
   border-radius: 20px;
   overflow: hidden;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#ajakava {
+  display: flex;
+  width: 100%;
+}
+
+.tulp {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.sündmus {
+  border-left: 2px solid white;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.info {
+  padding-left: 10px;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+h4 {
+  font-size: 100%;
+}
+
+p {
+  margin: 5px 0;
 }

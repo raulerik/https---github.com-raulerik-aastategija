@@ -396,3 +396,28 @@ h4 {
 p {
   margin: 5px 0;
 }
+.pictures1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pictures1 img {
+  margin-right: 40px;
+}
+.pictures2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pictures2 img{
+  margin-right: 40px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contakt-container {
+  text-align: left;
+  position: relative;
+}

@@ -2,38 +2,40 @@
 body {
   background-color: #000; /* Black background */
   color: #fff; /* White text color */
-  font-family: "Montserrat", sans-serif; /* Default font */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
 }
 
 /* Container for Content */
 .container {
-  max-width: 1440px; /* Maximum width for content */
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Add some padding to the sides */
-  box-sizing: border-box; /* Include padding in max-width calculation */
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Navbar Customization */
 .navbar-custom {
   background: transparent;
   padding: 1rem 0;
-  width: 100%;
 }
 
-.navbar-custom .navbar-brand img {
-  height: 50px; /* Logo height */
+.navbar-custom .navbar-brand img,
+.logo img {
+  height: 50px;
 }
 
 .navbar-custom .nav-link {
-  color: #fff; /* White text color for nav links */
-  margin-right: 1rem; /* Space between nav links */
+  color: #fff;
+  margin-right: 1rem;
 }
 
 .navbar-custom .nav-link:hover {
   color: #e0e0e0;
-  text-decoration: underline; /* Light grey on hover */
+  text-decoration: underline;
 }
 
 /* Navigation Bar */
@@ -42,18 +44,17 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #333;
-  color: white;
-  padding: 10px 0; /* Add some padding */
+  padding: 10px 0;
 }
 
 nav ul {
   display: flex;
-  list-style: none; /* Remove list bullets */
-  padding: 0; /* Remove list padding */
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-  margin-left: 10px; /* Space between menu items */
+  margin-left: 10px;
 }
 
 nav ul li a {
@@ -68,94 +69,71 @@ nav ul li a {
   flex-shrink: 0;
 }
 
-.logo img {
-  height: 50px; /* Logo size */
-}
-
 /* About Section */
 #about .highlight {
-  color: #4caf50; /* Highlight color */
+  color: #4caf50;
 }
 
-#about h2 {
-  color: #ffffff; /* Heading color */
-}
-
-#about p {
-  color: #dddddd; /* Paragraph color */
+#about h2,
+#about p,
+.landing-header h1,
+.landing-header p {
+  color: #ffffff;
 }
 
 #about .btn-custom {
-  background-color: #333; /* Button color */
+  background-color: #333;
   border: none;
 }
 
 #about .btn-custom:hover {
-  background-color: #555; /* Darker on hover */
+  background-color: #555;
 }
 
 /* Landing Header Styles */
 .landing-header {
   position: relative;
   text-align: right;
-  padding: 100px 0; /* Adjust padding */
+  padding: 100px 0;
   background: url("path_to_your_background_image.jpg") no-repeat center center;
   background-size: cover;
-  min-height: 500px; /* Set a minimum height for the header */
+  min-height: 500px;
 }
 
-.landing-header h1 {
-  align-self: stretch;
-  color: var(--EKKSL-Green-green-300, #b6de75);
-  text-align: center;
+.landing-header h1,
+.baltic-games {
   font-family: Dosis;
   font-size: 96px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: center;
 }
 
-.landing-header p {
-  align-self: stretch;
-  color: #fff;
-  text-align: center;
+.landing-header p,
+.elevate-your-skills {
   font-family: Dosis;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: center;
 }
-
-/* Overlay for Background Images */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-}
-
-/* Marquee styles */
-/* styles.css */
 
 /* Marquee styles */
 .marquee {
   overflow: hidden;
   white-space: nowrap;
-  box-sizing: border-box;
-  background-color: #000; /* You can remove or change this if your image covers the whole background */
+  background-color: #000;
 }
 
 .marquee-content {
   display: inline-block;
-  background-repeat: repeat-x; /* Repeat the image horizontally */
-  min-width: 400%; /* Ensure the div is wide enough to allow for continuous scrolling */
-  height: 80px; /* Set the height of your marquee */
+  background-repeat: repeat-x;
+  min-width: 400%;
+  height: 80px;
   animation: marquee 60s linear infinite;
   position: absolute;
-left: -240px;
-bottom: -40px;
+  left: -240px;
+  bottom: -190px;
 }
 
 @keyframes marquee {
@@ -163,16 +141,11 @@ bottom: -40px;
     transform: translateX(0);
   }
   to {
-    transform: translateX(
-      -50%
-    ); /* Adjust if needed based on the width of your content */
+    transform: translateX(-50%);
   }
 }
 
-/* ... existing CSS ... */
-
-/* Add additional custom styling here */
-
+/* Action Image */
 .action-image {
   position: absolute;
   left: 100px;
@@ -181,11 +154,11 @@ bottom: -40px;
   height: 890px;
 }
 
+/* Main Container */
 .main-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-wrap: nowrap;
   gap: -434px;
   position: relative;
   width: 1440px;
@@ -193,23 +166,23 @@ bottom: -40px;
   margin: 0 auto;
   background: #000000;
 }
+
+/* Vise Styles */
 .vise {
   flex-shrink: 0;
   position: absolute;
   width: 871px;
   height: 890px;
-  top: 61px;
   left: 100px;
-    no-repeat center;
   background-size: cover;
   z-index: 3;
 }
+
+/* Vise-1 Styles */
 .vise-1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
   gap: 16px;
   position: absolute;
   width: 718px;
@@ -217,40 +190,159 @@ bottom: -40px;
   top: 385px;
   left: 50%;
   transform: translate(-13.65%, 0);
-}
-.baltic-games {
-  align-self: stretch;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  height: 121px;
-  color: #b6de75;
-  font-family: "Dosis", sans-serif;
-  font-size: 96px;
-  font-weight: 700;
-  line-height: 121px;
-  text-align: center;
-  white-space: nowrap;
   z-index: 1;
 }
+
+.baltic-games,
 .elevate-your-skills {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.baltic-games {
+  height: 121px;
+  color: #b6de75;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.elevate-your-skills {
   width: 718px;
   height: 122px;
   color: #ffffff;
-  font-family: "Dosis", sans-serif;
-  font-size: 48px;
-  font-weight: 700;
   line-height: 60.672px;
-  text-align: center;
-  text-overflow: initial;
-  z-index: 2;
   overflow: hidden;
+}
 
- 
+/* About section */
+.content-container {
+  width: 100%;
+  height: 100%;
+  padding: 64px;
+  background: #1e1f21;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex; /* Changed from inline-flex for better control */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+  position: relative;
+}
 
+.title {
+  color: #b6de75;
+  font-size: 64px;
+  font-family: Montserrat;
+  font-weight: 800;
+  word-wrap: break-word;
+}
+
+.description {
+  width: 656px;
+}
+
+.text-default {
+  color: #fef5e9;
+  font-size: 23.82px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.24px;
+  word-wrap: break-word;
+}
+
+.text-highlight {
+  color: #92ce31;
+  font-size: 23.82px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.24px;
+  word-wrap: break-word;
+}
+
+.content-image {
+  position: absolute;
+  right: 8%; /* Adjust as needed */
+  bottom: 13%; /* Adjust as needed */
+  width: 452px;
+  min-width: 100px;
+  height: 362px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Styles for the smaller containers */
+.sub-container {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  gap: 24px;
+  padding-top: 24px;
+}
+
+.sub-container .card {
+  background: var(--gray-gray-900, #1e1f21);
+  border-radius: 20px;
+  padding: 64px 32px 64px 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-1 {
+  color: var(--Green-Ehituskool-green-100, #b4e7c7);
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 166.667% */
+  letter-spacing: 0.24px;
+}
+
+.card-2 {
+  color: var(--green-koolitused-green-100, #b0e9e1);
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 166.667% */
+  letter-spacing: 0.24px;
+  text-align: center;
+}
+
+.card-3 {
+  color: var(--light-blue-it-kool-lightblue-100, #baedfc);
+text-align: left;
+font-family: 'Inter-Bold', sans-serif;
+font-size: 24px;
+line-height: 40px;
+font-weight: 700;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: flex-start}
+}
+
+/* Sports section */
+
+.basketball-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 47px 64px;
+  position: relative;
+  background-color: #b42424;
+  border-radius: 20px;
+  overflow: hidden;
+}
